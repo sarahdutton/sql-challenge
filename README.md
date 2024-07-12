@@ -46,3 +46,13 @@ Listed the frequency counts, in descending order, of all the employee last names
 4. PostreSQL
 5. QuickDBD for Entity Relationship Diagram 
 
+## List of Content
+
+### EmployeeSQL Folder
+Employee_ERD.png: an image file of the ERD
+Employee_Schema.sql: a .sql file of the table schemata
+Employee_Query.sql: a .sql file of the queries
+
+### Data Folder
+- Contains the 6 CSV Files used
+
