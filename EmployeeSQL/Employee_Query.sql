@@ -29,8 +29,7 @@ CREATE TABLE Employees (
 	First_name VARCHAR NOT NULL,
 	Last_name VARCHAR NOT NULL,
 	Sex VARCHAR NOT NULL,
-	Hire_Date DATE NOT NULL,
-	PRIMARY KEY (Emp_Title_ID) REFERENCES Titles(Title_ID)
+	Hire_Date DATE NOT NULL
 );
 
 SELECT * FROM Employees
@@ -42,6 +41,7 @@ DROP TABLE Dept_Emp
 CREATE TABLE Dept_Emp (
 	Emp_No INT NOT NULL,
 	Dept_No VARCHAR NOT NULL,
+	PRIMARY KEY (Emp_No, Dept_No),
     FOREIGN KEY (Emp_No) REFERENCES Employees(Emp_No),
     FOREIGN KEY (Dept_No) REFERENCES Departments(Dept_No)
 );
